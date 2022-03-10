@@ -12,7 +12,10 @@ class Pokemon extends Model
     protected $fillable = [
         'name',
         'image_url',
-        'attribute',
+    ];
+
+    protected $casts = [
+        'attribute' => 'array',
     ];
     
 }
