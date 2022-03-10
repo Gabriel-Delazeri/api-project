@@ -29,7 +29,7 @@ class PokemonSeeder extends Seeder
             foreach ($Pokemon->type as $t) {
                 array_push($type, $t);
             }
-                DB::table('pokemons')->insert([
+                DB::table('pokemon')->insert([
                 'name' => $Pokemon->name,
                 'image_url' =>  $Pokemon->img,
                 'attribute' => json_encode($type),

@@ -13,7 +13,7 @@ class CreatePokemonsTable extends Migration
      */
     public function up()
     {
-        Schema::create('pokemons', function (Blueprint $table) {
+        Schema::create('pokemon', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('image_url');
